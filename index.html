@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title of the website -->
+    <title>Interactive Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header section -->
+    <header>
+      <h1 class="heading main-headings">Ritika Vishwakarma</h1>
+      <h2 class="heading main-headings">Aspriring Web Developer</h2>
+
+      <button id="theme-button">Toggle</button>
+      <section>
+        <!-- Navigation bar -->
+        <nav>
+          <ul class="nav-list">
+            <li><a class="links nav_list" href="#about">About Me</a></li>
+            <li><a class="links nav_list" href="#skills">My Skills</a></li>
+            <li><a class="links nav_list" href="#project">My Projects</a></li>
+            <li><a class="links nav_list" href="#contact">Contact Me</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+    <main>
+      <!-- About section -->
+      <section id="about">
+        <h3 class="heading">About Me</h3>
+        <p class="para">
+          I am a web development beginner and have started my journey by
+          learning HTML and building my first portfolio website. I have already
+          build a personal portfolio website using HTML basics, and I am
+          currently enhancing it by building this portfolio website using HTML
+          and CSS. While working on this project, w I have learned the
+          fundamentals of CSS including stylesheets, styling rules, CSS
+          selectors, CSS properties such as color, background and font, the box
+          model, CSS positioning and responsive design basics. This project
+          helped me understand how to style webpages and create responsive
+          layouts.
+        </p>
+      </section>
+
+      <!-- Skills section -->
+      <section id="skills">
+        <h3 class="heading">My Skills</h3>
+        <ul class="skill-list" type="square">
+          <li class="list-items">HTML and semantic web development</li>
+          <li class="list-items">CSS selectors and layout techniques</li>
+          <li class="list-items">CSS3 styling and responsive web design</li>
+          <li class="list-items">Box model and spacing techniques</li>
+          <li class="list-items">CSS positioning and web structuring</li>
+          <li class="list-items">Responsive design using media queries</li>
+          <li class="list-items">JavaScript for interactive web features</li>
+          <li class="list-items">Figma for UI/UX design and wireframing</li>
+          <li class="list-items">Git and GitHub version control basics</li>
+        </ul>
+      </section>
+
+      <!-- Projects section -->
+      <section id="project">
+        <h3 class="heading">My Projects</h3>
+
+        <ul>
+          <li><h4 class="heading">Personal Portfolio Website</h4></li>
+
+          <!-- Link & screenshot of project -->
+          <a
+            class="image"
+            href="https://github.com/ritika-vk2k25/personal-portfolio-website"
+            target="_blank"
+            ><img
+              class="project-link-img"
+              src="./images/project1.png"
+              width="300"
+              height="100"
+              alt="portfolio project screenshot"
+          /></a>
+
+          <!-- Short explanation od project -->
+          <p class="para">
+            This project is a personal portfolio website.The purpose of this
+            project was to understand the practical applicaton of HTML basics.
+          </p>
+
+          <p>HTML5 was used to build this project.</p>
+
+          <li><h4 class="heading">Styled Portfolio Website</h4></li>
+
+          <!-- Link & screenshot of project -->
+          <a
+            class="image"
+            href="https://github.com/ritika-vk2k25/styled-portfolio-website"
+            target="_blank"
+            ><img
+              class="project-link-img"
+              src="./images/second-.png"
+              width="300"
+              height="200"
+              alt="styled portfolio project screenshot"
+          /></a>
+
+          <!-- Short explanation od project -->
+          <p class="para">
+            This project is a styled portfolio website. The purpose of this
+            project was to understand the practical applicaton of HTML and CSS.
+          </p>
+
+          <p>HTML5 and CSS3 was used to build this project.</p>
+        </ul>
+      </section>
+
+      <!-- Contact section -->
+      <section id="contact">
+        <h3>Contact Me</h3>
+
+        <!-- email-ID & GitHub link -->
+        <div>email: vish58ritika@gmail.com</div>
+        <div>
+          GitHub link:
+          <a
+            class="links"
+            href="https://github.com/ritika-vk2k25"
+            target="_blank"
+            >https://github.com/ritika-vk2k25</a
+          >
+        </div>
+        <br />
+
+        <!-- Contact form -->
+        <form id="form">
+          <label for="name">Name:</label>
+          <input
+            id="name"
+            class="input-box"
+            type="text"
+            placeholder="Enter your name"
+            required
+            autocomplete="name"
+            minlength="3"
+          />
+          <small id="name-error"></small><br /><br />
+
+          <label for="email">email:</label>
+          <input
+            id="email"
+            class="input-box"
+            type="email"
+            placeholder="Enter your email"
+            required
+            autocomplete="email"
+          />
+          <small id="email-error"></small><br /><br />
+
+          <label for="text-area">Message:</label>
+          <textarea
+            id="text-area"
+            class="input-box"
+            placeholder="Write a message"
+            required
+            maxlength="100"
+          ></textarea>
+          <small id="message-error"></small><br /><br />
+
+          <button id="button" type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+      <p class="copyright">&copy; 2026 Ritika Vishwakarma</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
